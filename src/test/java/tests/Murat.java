@@ -51,8 +51,6 @@ public class Murat {
 
         //9. Fill details: Title, Name, Email, Password, Date of birth
         String randomday = String.valueOf(random.nextInt(0)+28);
-        String randommo
-
 
         actions.click(autoSignUpPage.titlecheckboxmr)
                 .sendKeys(Keys.TAB)
