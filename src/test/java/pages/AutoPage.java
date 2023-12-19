@@ -20,28 +20,28 @@ public class AutoPage {
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement signupLoginButton;
 
-    @FindBy(xpath = "//*[text()='Login to your account']")
+    @FindBy(xpath = "//[text()='Login to your account']")
     public WebElement loginToYourAccount;
 
-    @FindBy(xpath = "//*[@data-qa='login-email']")
+    @FindBy(xpath = "//[@data-qa='login-email']")
     public WebElement emailBox;
 
-    @FindBy(xpath = "//*[@data-qa='login-password']")
+    @FindBy(xpath = "//[@data-qa='login-password']")
     public WebElement passwordBox;
 
-    @FindBy(xpath = "//*[@data-qa='login-button']")
+    @FindBy(xpath = "//[@data-qa='login-button']")
     public WebElement loginButton;
 
 
-    @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
+    @FindBy(xpath = "//[text()='Your email or password is incorrect!']")
     public WebElement loginErrorMessage;
-    @FindBy(xpath = "//*[text()='Category']")
+    @FindBy(xpath = "//[text()='Category']")
     public WebElement categories;
 
     @FindBy(xpath = "(//i[@class='fa fa-plus'])[1]")
     public WebElement WomencategoryClick;
 
-    @FindBy(xpath = "//*[@id=\"Women\"]/div/ul/li[1]/a")
+    @FindBy(xpath = "//[@id='Women']/div/ul/li[1]/a")
     public WebElement dressClick;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
@@ -50,7 +50,7 @@ public class AutoPage {
     @FindBy(xpath = "(//span[@class='badge pull-right'])[2]")
     public WebElement catagoryMen;
 
-    @FindBy(xpath = "//*[@id=\"Men\"]/div/ul/li[1]/a")
+    @FindBy(xpath = "//[@id='Men']/div/ul/li[1]/a")
     public WebElement catagoryMenTsort;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
@@ -59,16 +59,16 @@ public class AutoPage {
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement link;
 
-    @FindBy(xpath = "//*[h2='Login to your account']")
+    @FindBy(xpath = "//[h2='Login to your account']")
     public WebElement Logintoyouraccount;
 
-    @FindBy(xpath = "//*[@name='email']")
+    @FindBy(xpath = "//[@name='email']")
     public WebElement emailauto;
 
-    @FindBy(xpath = "//*[@type='password']")
+    @FindBy(xpath = "//[@type='password']")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//*[@type='submit'][1]")
+    @FindBy(xpath = "//[@type='submit'][1]")
     public WebElement autoLogin;
 
     @FindBy(xpath = "//li[10]")
@@ -80,18 +80,54 @@ public class AutoPage {
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement signupButonu;
 
-    @FindBy (xpath = "//*[text()='New User Signup!']")
+    @FindBy (xpath = "//[text()='New User Signup!']")
     public WebElement newUserYaziElementi;
 
-    @FindBy (xpath = "//*[@data-qa='signup-name']")
+    @FindBy (xpath = "//[@data-qa='signup-name']")
     public WebElement nameButton;
 
-    @FindBy (xpath = "//*[@data-qa='signup-email']")
+    @FindBy (xpath = "//[@data-qa='signup-email']")
     public WebElement emailButton;
 
-    @FindBy (xpath = "//*[@data-qa='signup-button']")
+    @FindBy (xpath = "//[@data-qa='signup-button']")
     public WebElement signupButton;
 
     @FindBy (xpath = "//*[text()='Email Address already exist!']")
     public WebElement hataMesaji;
+
+    @FindBy(xpath = "//li[2]")
+    public WebElement productsLinki;
+
+    @FindBy(xpath = "(//img[@alt='ecommerce website products'])[2]")
+    public WebElement urunResmi2;
+
+    @FindBy(xpath = "//a[@data-product-id='2']")
+    public WebElement addToCart2;
+
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//*[text()='Blue Top']")
+    public WebElement BlueTopInCart;
+
+    @FindBy(xpath = "//*[text()='Men Tshirt']")
+    public WebElement MenTshirtInCart;
+
+    @FindBy(xpath = "(//*[@class='cart_total_price'])[1]")
+    public WebElement totalprice1;
+
+    @FindBy(xpath = "(//*[@class='cart_price'])[1]")
+    public WebElement price1;
+
+    @FindBy(xpath = "(//button[@class='disabled'])[1]")
+    public WebElement quantity1;
+
+    @FindBy(xpath = "(//*[@class='btn btn-default add-to-cart'])[1]")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "(//img[@alt='ecommerce website products'])[1]")
+    public WebElement urunResmi;
+
+    @FindBy(xpath = "//button[text()='Continue Shopping']")
+    public WebElement continueShopping;
 }
