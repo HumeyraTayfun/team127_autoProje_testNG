@@ -11,26 +11,26 @@ public class AutoPage {
     }
 
     @FindBy(xpath = "(//div[@class= 'carousel-inner'])[1]")
-    public WebElement anaSayfaSlider;
+    public WebElement homePageSlider;
 
     @FindBy(xpath = "//a[@href='/login']")
-    public WebElement signupLoginButonu;
+    public WebElement signupLoginButton;
 
     @FindBy(xpath = "//*[text()='Login to your account']")
     public WebElement loginToYourAccount;
 
     @FindBy(xpath = "//*[@data-qa='login-email']")
-    public WebElement emailKutusu;
+    public WebElement emailBox;
 
     @FindBy(xpath = "//*[@data-qa='login-password']")
-    public WebElement şifreKutusu;
+    public WebElement passwordBox;
 
     @FindBy(xpath = "//*[@data-qa='login-button']")
-    public WebElement loginButonu;
+    public WebElement loginButton;
 
 
     @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
-    public WebElement loginHataMesajı;
+    public WebElement loginErrorMessage;
 
 
 

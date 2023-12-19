@@ -1,6 +1,5 @@
 package tests;
 
-import com.github.javafaker.Faker;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AutoPage;
@@ -18,26 +17,26 @@ public class ihsan {
         SoftAssert softAssert = new SoftAssert();
         AutoPage autoPage = new AutoPage();
 
-        softAssert.assertTrue(autoPage.anaSayfaSlider.isDisplayed(),
-                "Anasayfada değilsiniz!");
+        softAssert.assertTrue(autoPage.homePageSlider.isDisplayed(),
+                "You are not on the home page!");
 
         // 3- Click on 'Signup / Login' button
-        autoPage.signupLoginButonu.click();
+        autoPage.signupLoginButton.click();
 
         // 4- Verify 'Login to your account' is visible
         softAssert.assertTrue(autoPage.loginToYourAccount.isDisplayed(),
-                "'Login to your account' yazmıyor!");
+                "'Login to your account' is NOT visible!");
 
         // 5- Enter incorrect email address and password
-        autoPage.emailKutusu.sendKeys(ConfigReader.getProperty("yanlisEmail"));
-        autoPage.şifreKutusu.sendKeys(ConfigReader.getProperty("yanlisSifre"));
+        autoPage.emailBox.sendKeys(ConfigReader.getProperty("wrongEmail"));
+        autoPage.passwordBox.sendKeys(ConfigReader.getProperty("wrongPassword"));
 
         // 6- Click 'login' button
-        autoPage.loginButonu.click();
+        autoPage.loginButton.click();
 
         // 7- Verify error 'Your email or password is incorrect!' is visible
-        softAssert.assertTrue(autoPage.loginHataMesajı.isDisplayed(),
-                "Hata mesajı gözükmedi!");
+        softAssert.assertTrue(autoPage.loginErrorMessage.isDisplayed(),
+                "'Your email or password is incorrect!' is NOT visible!");
 
         Driver.quitDriver();
     }
