@@ -41,7 +41,7 @@ public class AutoPage {
     @FindBy(xpath = "(//i[@class='fa fa-plus'])[1]")
     public WebElement WomencategoryClick;
 
-    @FindBy(xpath = "//[@id="Women"]/div/ul/li[1]/a")
+    @FindBy(xpath = "//[@id='Women']/div/ul/li[1]/a")
     public WebElement dressClick;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
@@ -50,7 +50,7 @@ public class AutoPage {
     @FindBy(xpath = "(//span[@class='badge pull-right'])[2]")
     public WebElement catagoryMen;
 
-    @FindBy(xpath = "//[@id="Men"]/div/ul/li[1]/a")
+    @FindBy(xpath = "//[@id='Men']/div/ul/li[1]/a")
     public WebElement catagoryMenTsort;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
@@ -94,4 +94,40 @@ public class AutoPage {
 
     @FindBy (xpath = "//*[text()='Email Address already exist!']")
     public WebElement hataMesaji;
+
+    @FindBy(xpath = "//li[2]")
+    public WebElement productsLinki;
+
+    @FindBy(xpath = "(//img[@alt='ecommerce website products'])[2]")
+    public WebElement urunResmi2;
+
+    @FindBy(xpath = "//a[@data-product-id='2']")
+    public WebElement addToCart2;
+
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//*[text()='Blue Top']")
+    public WebElement BlueTopInCart;
+
+    @FindBy(xpath = "//*[text()='Men Tshirt']")
+    public WebElement MenTshirtInCart;
+
+    @FindBy(xpath = "(//*[@class='cart_total_price'])[1]")
+    public WebElement totalprice1;
+
+    @FindBy(xpath = "(//*[@class='cart_price'])[1]")
+    public WebElement price1;
+
+    @FindBy(xpath = "(//button[@class='disabled'])[1]")
+    public WebElement quantity1;
+
+    @FindBy(xpath = "(//*[@class='btn btn-default add-to-cart'])[1]")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "(//img[@alt='ecommerce website products'])[1]")
+    public WebElement urunResmi;
+
+    @FindBy(xpath = "//button[text()='Continue Shopping']")
+    public WebElement continueShopping;
 }
