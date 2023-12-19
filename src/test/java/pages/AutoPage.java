@@ -14,7 +14,27 @@ public class AutoPage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+    @FindBy(xpath = "(//div[@class= 'carousel-inner'])[1]")
+    public WebElement homePageSlider;
 
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement signupLoginButton;
+
+    @FindBy(xpath = "//*[text()='Login to your account']")
+    public WebElement loginToYourAccount;
+
+    @FindBy(xpath = "//*[@data-qa='login-email']")
+    public WebElement emailBox;
+
+    @FindBy(xpath = "//*[@data-qa='login-password']")
+    public WebElement passwordBox;
+
+    @FindBy(xpath = "//*[@data-qa='login-button']")
+    public WebElement loginButton;
+
+
+    @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
+    public WebElement loginErrorMessage;
     @FindBy(xpath = "//*[text()='Category']")
     public WebElement categories;
 
