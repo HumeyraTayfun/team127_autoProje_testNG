@@ -76,4 +76,11 @@ public class AutoPage {
 
     @FindBy(xpath = "//a[@href='/delete account")
     public WebElement deleteaccount;
+
+    @FindBy(xpath = "//a[@href='/delete account")
+    public WebElement deleteacount;
+    @FindBy(xpath = "//a[@href='/delete account")
+    public WebElement delteaccount;
+    @FindBy(xpath = "//a[@href='/delete account")
+    public WebElement deleteaccont;
 }
