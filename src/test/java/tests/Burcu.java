@@ -14,7 +14,7 @@ public class Burcu {
 
 
         // 2.  url ye gıt 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("autoUrl1"));
+        Driver.getDriver().get(ConfigReader.getProperty("autoUrl"));
         // 3. Anasayfanın basarıyla goruntulendıgını dogrulayın
         AutoPage autoPage = new AutoPage();
         SoftAssert softAssert = new SoftAssert();
