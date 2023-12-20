@@ -32,9 +32,9 @@ public class AutoPage {
     @FindBy(xpath = "//[@data-qa='login-button']")
     public WebElement loginButton;
 
-
     @FindBy(xpath = "//[text()='Your email or password is incorrect!']")
     public WebElement loginErrorMessage;
+
     @FindBy(xpath = "//[text()='Category']")
     public WebElement categories;
 
@@ -74,7 +74,7 @@ public class AutoPage {
     @FindBy(xpath = "//li[10]")
     public WebElement Loggedinas;
 
-    @FindBy(xpath = "//a[@href='/delete account")
+    @FindBy(xpath = "//a[@href='/delete_account']")
     public WebElement deleteaccount;
 
     @FindBy(xpath = "//a[@href='/login']")
@@ -130,4 +130,16 @@ public class AutoPage {
 
     @FindBy(xpath = "//button[text()='Continue Shopping']")
     public WebElement continueShopping;
+
+    @FindBy(xpath = "//i[@class='fa fa-home']")
+    public WebElement homepagelink;
+
+    @FindBy(xpath = "//i[@class='fa fa-lock']")
+    public WebElement singupbutton;
+
+    @FindBy(xpath = "//li[10]")
+    public WebElement loggedtext;
+
+    @FindBy(xpath = "//h2[@data-qa='account-deleted']")
+    public  WebElement accdeleted;
 }
